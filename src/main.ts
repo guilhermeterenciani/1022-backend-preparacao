@@ -13,6 +13,9 @@ app.use(express.json())  //Middleware
 //incluir o CORS -> QUANDO A GENTE TEM OUTRA PORTA FAZENDO REQUISIÇÃO PARA A PORTA DO SERVIDOR
 app.use(cors())
 //ROTAS
+app.get("/",(req,res)=>{
+    res.send("Guilherme Figueiredo Terenciani")
+})
 app.get("/produtos",async(req,res)=>{
 
     //O que eu tenho que fazer aqui dentro?

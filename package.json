@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/main.ts",
-    "test": "vitest -w"
+    "test": "vitest -w",
+    "build": "tsc",
+    "start": "node dist/main.js"
   },
   "author": "guilhermeterenciani",
   "license": "ISC",

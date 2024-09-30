@@ -34,6 +34,7 @@ app.get("/produtos",async(req,res)=>{
         //PASSO 4: Colocar os dados do banco no response
         res.send(result)
     }catch(e){
+        console.log(e)
         res.status(500).send("Erro do servidor")
     }
     
